@@ -5,7 +5,7 @@ dam_dragcover = [_this, 2, true, [true]] call BIS_fnc_param;
 dam_injured = [_this, 3, 50, [50]] call BIS_fnc_param;
 dam_hitReact = [_this, 4, 20, [20]] call BIS_fnc_param;
 
-if (dam_warVoice) then {[] execvm "scripts\voices.sqf";};
+//if (dam_warVoice) then {[] execvm "scripts\voices.sqf";};
 
 if (isServer) then {
 //by Larrow
@@ -61,7 +61,7 @@ if (_rnd == 4) then {_unit switchmove "AmovPercMstpSrasWrflDnon_AadjPpneMstpSras
 
 
 [ _unit ] remoteExec [ "Lar_fnc_setunconscious", 2 ];
-
+/*
 ////////////////////////////////////// hit sound
 //sound for WEST units
 if (side _unit == west) then {
@@ -87,7 +87,7 @@ _unit say3D _hitSound;
 /////////////////////////////////////////////////////////////////////
 
 _unit addMPEventHandler ["MPKilled", {_this execVM "scripts\killer.sqf"}]; 
-
+*/
 sleep 3;
 
 _anim = selectRandom [
@@ -100,6 +100,7 @@ _anim = selectRandom [
 _null = [_unit, _anim] spawn inCap;
 
 ////////////////////////////////////////////// in pain sound loop
+/*
 //play sounds while man is injured, not dead yet
 while {(alive _unit)} do {
 
@@ -137,7 +138,7 @@ _unit say3D _sound;
 sleep (10 + random 20);
 	
 };
-	
+*/	
 	};
 
 

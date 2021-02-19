@@ -18,7 +18,7 @@ player enableSimulation false;
 
 sleep 3;
 //If you don't want intro music comment out the line below
-//playsound "intro";
+playsound "intro";
 //********************************************************************************************************************************************
 sleep 6;
 1 cutText [format ["<t color='#ffffff' size='2' face='PuristaMedium' shadow='0'>%1 presents...</t>", _author ],"PLAIN",-1,true,true]; 

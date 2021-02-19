@@ -26,7 +26,7 @@ _this select 4, hit react chance, determine chance unit have react animation if 
 */
 _null = [false, false, true, 40, 20] execvm "scripts\injured.sqf";
 
-
+5400 call ALiVE_fnc_AutoSave_PNS;
 
 ["CBA_loadingScreenDone", {
     execVM "scripts\Intro.sqf";

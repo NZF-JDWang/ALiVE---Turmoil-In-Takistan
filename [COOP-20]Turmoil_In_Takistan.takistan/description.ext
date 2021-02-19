@@ -7,7 +7,7 @@ enableDebugConsole = 1;                                       //Allows debug con
 author			= "[NZF]JD Wang";
 onLoadName		= "Turmoil In Takistan";
 onLoadMission	= "";
-loadScreen		= "";
+loadScreen		= "media\images\titleShot.jpg";
 
 //*****************************************************************************************************************
 
@@ -15,6 +15,20 @@ loadScreen		= "";
 class CfgFunctions
 {
 	#include "CHVD\CfgFunctions.hpp"
+};
+
+class CfgSounds {
+
+    sounds[] = {};
+
+    class intro
+	{ 
+        name = "Intro";
+        sound[] = {"media\sounds\intro.ogg", db+9, 1.0};
+		titles[] = {0,""};
+    };
+    
+   
 };
 
 //////////////////////////////////////////////////////////////////////////////////

@@ -239,15 +239,12 @@ case "TeamLeader": {
 			"TFAR_rt1523g_big_rhs",
 			"rhsusf_acc_anpas13gv1",
 			"rhsusf_acc_acog_rmr",
-			"rhs_weap_m4a1_m203",
 			"Rangefinder",
 			"Binocular",
 			"rhsusf_iotv_ocp_Squadleader",	
 			"rhsusf_iotv_ocp_Teamleader",
 			"ACRE_PRC117F",
-			"ACRE_PRC152",
-			"ACE_HuntIR_monitor",
-			"ACE_HuntIR_M203"
+			"ACRE_PRC152"
 
 		],false] call ace_arsenal_fnc_initBox;
 	};
