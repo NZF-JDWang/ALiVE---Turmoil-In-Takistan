@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=6026;
+		nextID=6031;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=890;
+		nextID=1007;
 	};
 	class Camera
 	{
-		pos[]={8076.0957,318.15881,1945.3545};
-		dir[]={0.75155765,-0.36727673,-0.54815906};
-		up[]={0.29681697,0.93003738,-0.21648698};
-		aside[]={-0.58934379,-1.1133525e-006,-0.80802518};
+		pos[]={8045.1777,323.13577,1991.79};
+		dir[]={-0.46986014,-0.76982135,0.43222436};
+		up[]={-0.56656426,0.63820648,0.52118117};
+		aside[]={0.677095,-1.2203673e-006,0.73605406};
 	};
 };
 binarizationWanted=0;
@@ -29641,7 +29641,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=107;
+		items=109;
 		class Item0
 		{
 			dataType="Layer";
@@ -95169,7 +95169,7 @@ class Mission
 					};
 					id=4275;
 					type="UK3CB_ANP_B_DSHKM";
-					atlOffset=2.7661896;
+					atlOffset=2.7660065;
 				};
 				class Item2
 				{
@@ -102551,7 +102551,7 @@ class Mission
 			init="call{{_x setdammage 1} foreach (nearestTerrainObjects [this,[],50]);}";
 			id=5790;
 			type="Logic";
-			atlOffset=0.080764771;
+			atlOffset=3.8146973e-005;
 		};
 		class Item87
 		{
@@ -102574,7 +102574,7 @@ class Mission
 			init="call{{_x setdammage 1} foreach (nearestTerrainObjects [this,[],10]);}";
 			id=5792;
 			type="Logic";
-			atlOffset=2.5699615;
+			atlOffset=2.5697861;
 		};
 		class Item89
 		{
@@ -102586,7 +102586,7 @@ class Mission
 			init="call{{_x setdammage 1} foreach (nearestTerrainObjects [this,[],10]);}";
 			id=5793;
 			type="Logic";
-			atlOffset=2.5697708;
+			atlOffset=2.5698318;
 		};
 		class Item90
 		{
@@ -102610,7 +102610,7 @@ class Mission
 			init="call{{_x setdammage 1} foreach (nearestTerrainObjects [this,[],10]);}";
 			id=5795;
 			type="Logic";
-			atlOffset=2.5698242;
+			atlOffset=2.5699158;
 		};
 		class Item92
 		{
@@ -104816,6 +104816,42 @@ class Mission
 			id=6022;
 			type="UK3CB_TKM_O_PKM_nest_des";
 			atlOffset=9.1552734e-005;
+		};
+		class Item107
+		{
+			dataType="Marker";
+			position[]={8084.707,296.04001,1899.9871};
+			name="marker_27";
+			text="Refuel, Rearm and Repair Trucks";
+			type="b_service";
+			a=0.75;
+			b=0.75;
+			id=6026;
+		};
+		class Item108
+		{
+			dataType="Layer";
+			name="Zeus + HC";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={8030.0562,300.96674,2006.8252};
+					};
+					name="HC";
+					isPlayable=1;
+					description="Headless Client";
+					id=6029;
+					type="HeadlessClient_F";
+					atlOffset=4.9267273;
+				};
+			};
+			id=6030;
+			atlOffset=-53.41832;
 		};
 	};
 	class Connections
